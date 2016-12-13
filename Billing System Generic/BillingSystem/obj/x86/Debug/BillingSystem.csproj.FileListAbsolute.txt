@@ -1,0 +1,113 @@
+C:\Users\Public\Music\Work\Shuharadam\Billing System\SunCityTours\bin\Debug\SunCity.exe.config
+C:\Users\Public\Music\Work\Shuharadam\Billing System\SunCityTours\obj\x86\Debug\SunCity.exe
+C:\Users\Public\Music\Work\Shuharadam\Billing System\SunCityTours\obj\x86\Debug\SunCity.pdb
+C:\Users\Public\Music\Work\Shuharadam\Billing System\BillingSystem\bin\Debug\SunCity.exe.config
+C:\Users\Public\Music\Work\Shuharadam\Billing System\BillingSystem\obj\x86\Debug\SunCity.exe
+C:\Users\Public\Music\Work\Shuharadam\Billing System\BillingSystem\obj\x86\Debug\SunCity.pdb
+C:\Users\Public\Music\Work\Shuharadam\Billing System\BillingSystem\obj\x86\Debug\BillingSystem.csprojResolveAssemblyReference.cache
+C:\Users\Public\Music\Work\Shuharadam\Billing System\BillingSystem\obj\x86\Debug\SunCity.frmSetting.resources
+C:\Users\Public\Music\Work\Shuharadam\Billing System\BillingSystem\obj\x86\Debug\SunCity.frmInvoice.resources
+C:\Users\Public\Music\Work\Shuharadam\Billing System\BillingSystem\obj\x86\Debug\SunCity.frmMain.resources
+C:\Users\Public\Music\Work\Shuharadam\Billing System\BillingSystem\obj\x86\Debug\SunCity.frmView.resources
+C:\Users\Public\Music\Work\Shuharadam\Billing System\BillingSystem\obj\x86\Debug\SunCity.Properties.Resources.resources
+C:\Users\Public\Music\Work\Shuharadam\Billing System\BillingSystem\obj\x86\Debug\BillingSystem.csproj.GenerateResource.Cache
+C:\Users\Public\Music\Work\Shuharadam\Billing System\BillingSystem\obj\x86\Debug\RdlCompile.cache
+C:\Users\Public\Music\Work\Shuharadam\Billing System\BillingSystem\obj\x86\Debug\RdlCompile.compiled
+C:\Users\Public\Music\Work\Shuharadam\Billing System\BillingSystem\bin\Debug\SunCity.exe
+C:\Users\Public\Music\Work\Shuharadam\Billing System\BillingSystem\bin\Debug\SunCity.pdb
+E:\Billing System\BillingSystem\bin\Debug\SunCity.exe.config
+E:\Billing System\BillingSystem\obj\x86\Debug\SunCity.exe
+E:\Billing System\BillingSystem\obj\x86\Debug\SunCity.pdb
+E:\Billing System\BillingSystem\bin\Debug\SunCity.exe
+E:\Billing System\BillingSystem\bin\Debug\SunCity.pdb
+E:\Billing System\BillingSystem\obj\x86\Debug\SunCity.frmSetting.resources
+E:\Billing System\BillingSystem\obj\x86\Debug\SunCity.frmInvoice.resources
+E:\Billing System\BillingSystem\obj\x86\Debug\SunCity.frmMain.resources
+E:\Billing System\BillingSystem\obj\x86\Debug\SunCity.Properties.Resources.resources
+E:\Billing System\BillingSystem\obj\x86\Debug\BillingSystem.csproj.GenerateResource.Cache
+E:\Billing System\BillingSystem\obj\x86\Debug\RdlCompile.cache
+E:\Billing System\BillingSystem\obj\x86\Debug\RdlCompile.compiled
+E:\Billing System\BillingSystem\obj\x86\Debug\BillingSystem.csprojResolveAssemblyReference.cache
+E:\Billing System\BillingSystem\obj\x86\Debug\SunCity.frmView.resources
+D:\other\other\ItunesInbox\Billing System\BillingSystem\bin\Debug\SunCity.exe.config
+D:\other\other\ItunesInbox\Billing System\BillingSystem\obj\x86\Debug\SunCity.exe
+D:\other\other\ItunesInbox\Billing System\BillingSystem\obj\x86\Debug\SunCity.pdb
+D:\other\other\ItunesInbox\Billing System\BillingSystem\bin\Debug\SunCity.exe
+D:\other\other\ItunesInbox\Billing System\BillingSystem\bin\Debug\SunCity.pdb
+D:\other\other\ItunesInbox\Billing System\BillingSystem\obj\x86\Debug\BillingSystem.csprojResolveAssemblyReference.cache
+D:\other\other\ItunesInbox\Billing System\BillingSystem\obj\x86\Debug\SunCity.frmSetting.resources
+D:\other\other\ItunesInbox\Billing System\BillingSystem\obj\x86\Debug\SunCity.frmInvoice.resources
+D:\other\other\ItunesInbox\Billing System\BillingSystem\obj\x86\Debug\SunCity.frmMain.resources
+D:\other\other\ItunesInbox\Billing System\BillingSystem\obj\x86\Debug\SunCity.frmView.resources
+D:\other\other\ItunesInbox\Billing System\BillingSystem\obj\x86\Debug\SunCity.Properties.Resources.resources
+D:\other\other\ItunesInbox\Billing System\BillingSystem\obj\x86\Debug\BillingSystem.csproj.GenerateResource.Cache
+D:\other\other\ItunesInbox\Billing System\BillingSystem\obj\x86\Debug\RdlCompile.cache
+D:\other\other\ItunesInbox\Billing System\BillingSystem\obj\x86\Debug\RdlCompile.compiled
+D:\other\Billing System For Tap Hospital\BillingSystem\bin\Debug\SunCity.exe.config
+D:\other\Billing System For Tap Hospital\BillingSystem\obj\x86\Debug\SunCity.exe
+D:\other\Billing System For Tap Hospital\BillingSystem\obj\x86\Debug\SunCity.pdb
+D:\other\Billing System For Tap Hospital\BillingSystem\bin\Debug\SunCity.exe
+D:\other\Billing System For Tap Hospital\BillingSystem\bin\Debug\SunCity.pdb
+D:\other\Billing System For Tap Hospital\BillingSystem\obj\x86\Debug\BillingSystem.csprojResolveAssemblyReference.cache
+D:\other\Billing System For Tap Hospital\BillingSystem\obj\x86\Debug\SunCity.frmSetting.resources
+D:\other\Billing System For Tap Hospital\BillingSystem\obj\x86\Debug\SunCity.frmInvoice.resources
+D:\other\Billing System For Tap Hospital\BillingSystem\obj\x86\Debug\SunCity.frmMain.resources
+D:\other\Billing System For Tap Hospital\BillingSystem\obj\x86\Debug\SunCity.frmView.resources
+D:\other\Billing System For Tap Hospital\BillingSystem\obj\x86\Debug\SunCity.Properties.Resources.resources
+D:\other\Billing System For Tap Hospital\BillingSystem\obj\x86\Debug\BillingSystem.csproj.GenerateResource.Cache
+D:\other\Billing System For Tap Hospital\BillingSystem\obj\x86\Debug\RdlCompile.cache
+D:\other\Billing System For Tap Hospital\BillingSystem\obj\x86\Debug\RdlCompile.compiled
+E:\Work\Billing System For Tap Hospital\BillingSystem\bin\Debug\SunCity.exe.config
+E:\Work\Billing System For Tap Hospital\BillingSystem\obj\x86\Debug\SunCity.exe
+E:\Work\Billing System For Tap Hospital\BillingSystem\obj\x86\Debug\SunCity.pdb
+E:\Work\Billing System For Tap Hospital\BillingSystem\bin\Debug\SunCity.exe
+E:\Work\Billing System For Tap Hospital\BillingSystem\bin\Debug\SunCity.pdb
+E:\Work\Billing System For Tap Hospital\BillingSystem\obj\x86\Debug\BillingSystem.csprojResolveAssemblyReference.cache
+E:\Work\Billing System For Tap Hospital\BillingSystem\obj\x86\Debug\SunCity.frmSetting.resources
+E:\Work\Billing System For Tap Hospital\BillingSystem\obj\x86\Debug\SunCity.frmInvoice.resources
+E:\Work\Billing System For Tap Hospital\BillingSystem\obj\x86\Debug\SunCity.frmMain.resources
+E:\Work\Billing System For Tap Hospital\BillingSystem\obj\x86\Debug\SunCity.frmView.resources
+E:\Work\Billing System For Tap Hospital\BillingSystem\obj\x86\Debug\SunCity.Properties.Resources.resources
+E:\Work\Billing System For Tap Hospital\BillingSystem\obj\x86\Debug\BillingSystem.csproj.GenerateResource.Cache
+E:\Work\Billing System For Tap Hospital\BillingSystem\obj\x86\Debug\RdlCompile.cache
+E:\Work\Billing System For Tap Hospital\BillingSystem\obj\x86\Debug\RdlCompile.compiled
+E:\Hitesh\Project\Billing System\Billing System For Brahmani\BillingSystem\bin\Debug\BrahmaniBilling.exe.config
+E:\Hitesh\Project\Billing System\Billing System For Brahmani\BillingSystem\bin\Debug\BrahmaniBilling.exe
+E:\Hitesh\Project\Billing System\Billing System For Brahmani\BillingSystem\bin\Debug\BrahmaniBilling.pdb
+E:\Hitesh\Project\Billing System\Billing System For Brahmani\BillingSystem\bin\Debug\SecurityHelper.dll
+E:\Hitesh\Project\Billing System\Billing System For Brahmani\BillingSystem\bin\Debug\SecurityHelper.pdb
+E:\Hitesh\Project\Billing System\Billing System For Brahmani\BillingSystem\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Hitesh\Project\Billing System\Billing System For Brahmani\BillingSystem\obj\x86\Debug\BrahmaniBilling.frmMain.resources
+E:\Hitesh\Project\Billing System\Billing System For Brahmani\BillingSystem\obj\x86\Debug\BrahmaniBilling.frmSetting.resources
+E:\Hitesh\Project\Billing System\Billing System For Brahmani\BillingSystem\obj\x86\Debug\BrahmaniBilling.frmInvoice.resources
+E:\Hitesh\Project\Billing System\Billing System For Brahmani\BillingSystem\obj\x86\Debug\BrahmaniBilling.frmView.resources
+E:\Hitesh\Project\Billing System\Billing System For Brahmani\BillingSystem\obj\x86\Debug\BrahmaniBilling.Properties.Resources.resources
+E:\Hitesh\Project\Billing System\Billing System For Brahmani\BillingSystem\obj\x86\Debug\ClientApplication.GenerateKey.resources
+E:\Hitesh\Project\Billing System\Billing System For Brahmani\BillingSystem\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\Hitesh\Project\Billing System\Billing System For Brahmani\BillingSystem\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\Hitesh\Project\Billing System\Billing System For Brahmani\BillingSystem\obj\x86\Debug\RdlCompile.cache
+E:\Hitesh\Project\Billing System\Billing System For Brahmani\BillingSystem\obj\x86\Debug\RdlCompile.compiled
+E:\Hitesh\Project\Billing System\Billing System For Brahmani\BillingSystem\obj\x86\Debug\BrahmaniBilling.exe
+E:\Hitesh\Project\Billing System\Billing System For Brahmani\BillingSystem\obj\x86\Debug\BrahmaniBilling.pdb
+E:\Hitesh\Project\Billing System\Billing System Generic\BillingSystem\bin\Debug\BillingSystem.sdf
+E:\Hitesh\Project\Billing System\Billing System Generic\BillingSystem\bin\Debug\BillingSystem.exe.config
+E:\Hitesh\Project\Billing System\Billing System Generic\BillingSystem\bin\Debug\BillingSystem.exe
+E:\Hitesh\Project\Billing System\Billing System Generic\BillingSystem\bin\Debug\BillingSystem.pdb
+E:\Hitesh\Project\Billing System\Billing System Generic\BillingSystem\bin\Debug\SecurityHelper.dll
+E:\Hitesh\Project\Billing System\Billing System Generic\BillingSystem\bin\Debug\SecurityHelper.pdb
+E:\Hitesh\Project\Billing System\Billing System Generic\BillingSystem\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Hitesh\Project\Billing System\Billing System Generic\BillingSystem\obj\x86\Debug\BillingSystem.frm_Tax_master.resources
+E:\Hitesh\Project\Billing System\Billing System Generic\BillingSystem\obj\x86\Debug\BillingSystem.frm_Product_master.resources
+E:\Hitesh\Project\Billing System\Billing System Generic\BillingSystem\obj\x86\Debug\BillingSystem.frmMain.resources
+E:\Hitesh\Project\Billing System\Billing System Generic\BillingSystem\obj\x86\Debug\BillingSystem.frmSetting.resources
+E:\Hitesh\Project\Billing System\Billing System Generic\BillingSystem\obj\x86\Debug\BillingSystem.frmInvoice.resources
+E:\Hitesh\Project\Billing System\Billing System Generic\BillingSystem\obj\x86\Debug\BillingSystem.frmView.resources
+E:\Hitesh\Project\Billing System\Billing System Generic\BillingSystem\obj\x86\Debug\BillingSystem.frm_customer_master.resources
+E:\Hitesh\Project\Billing System\Billing System Generic\BillingSystem\obj\x86\Debug\BillingSystem.Properties.Resources.resources
+E:\Hitesh\Project\Billing System\Billing System Generic\BillingSystem\obj\x86\Debug\ClientApplication.GenerateKey.resources
+E:\Hitesh\Project\Billing System\Billing System Generic\BillingSystem\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\Hitesh\Project\Billing System\Billing System Generic\BillingSystem\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\Hitesh\Project\Billing System\Billing System Generic\BillingSystem\obj\x86\Debug\RdlCompile.cache
+E:\Hitesh\Project\Billing System\Billing System Generic\BillingSystem\obj\x86\Debug\RdlCompile.compiled
+E:\Hitesh\Project\Billing System\Billing System Generic\BillingSystem\obj\x86\Debug\BillingSystem.exe
+E:\Hitesh\Project\Billing System\Billing System Generic\BillingSystem\obj\x86\Debug\BillingSystem.pdb
