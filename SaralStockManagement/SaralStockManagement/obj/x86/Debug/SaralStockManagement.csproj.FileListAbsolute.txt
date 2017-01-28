@@ -1,0 +1,14 @@
+E:\Hitesh\Project\Billing System\SaralStockManagement\SaralStockManagement\bin\Debug\SaralStockManagement.exe
+E:\Hitesh\Project\Billing System\SaralStockManagement\SaralStockManagement\bin\Debug\SaralStockManagement.pdb
+E:\Hitesh\Project\Billing System\SaralStockManagement\SaralStockManagement\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Hitesh\Project\Billing System\SaralStockManagement\SaralStockManagement\obj\x86\Debug\SaralStockManagement.frmSaralBill.resources
+E:\Hitesh\Project\Billing System\SaralStockManagement\SaralStockManagement\obj\x86\Debug\SaralStockManagement.frmSaralProduct.resources
+E:\Hitesh\Project\Billing System\SaralStockManagement\SaralStockManagement\obj\x86\Debug\SaralStockManagement.frmSaralPurchase.resources
+E:\Hitesh\Project\Billing System\SaralStockManagement\SaralStockManagement\obj\x86\Debug\SaralStockManagement.Properties.Resources.resources
+E:\Hitesh\Project\Billing System\SaralStockManagement\SaralStockManagement\obj\x86\Debug\SaralStockManagement.SaralMainForm.resources
+E:\Hitesh\Project\Billing System\SaralStockManagement\SaralStockManagement\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\Hitesh\Project\Billing System\SaralStockManagement\SaralStockManagement\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\Hitesh\Project\Billing System\SaralStockManagement\SaralStockManagement\obj\x86\Debug\SaralStockManagement.exe
+E:\Hitesh\Project\Billing System\SaralStockManagement\SaralStockManagement\obj\x86\Debug\SaralStockManagement.pdb
+E:\Hitesh\Project\Billing System\SaralStockManagement1\SaralStockManagement\obj\x86\Debug\SaralStockManagement.exe
+E:\Hitesh\Project\Billing System\SaralStockManagement1\SaralStockManagement\obj\x86\Debug\SaralStockManagement.pdb
