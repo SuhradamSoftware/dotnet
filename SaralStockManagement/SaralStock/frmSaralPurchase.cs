@@ -20,16 +20,23 @@ namespace BillingSystem
 
         private void frmSaralProduct_Load(object sender, EventArgs e)
         {
-            //this.Height = Screen.PrimaryScreen.WorkingArea.Height - 120;
-            //this.Width = Screen.PrimaryScreen.WorkingArea.Width - 30;
-            //this.Location = new Point(DataAccess.tlp_main_x + 10, DataAccess.tlp_main_y + 10);
+            try
+            {
+                //this.Height = Screen.PrimaryScreen.WorkingArea.Height - 120;
+                //this.Width = Screen.PrimaryScreen.WorkingArea.Width - 30;
+                //this.Location = new Point(DataAccess.tlp_main_x + 10, DataAccess.tlp_main_y + 10);
 
-            //this.Height = DataAccess.gbl_client_height;
-            //this.Width = DataAccess.gbl_client_width;
+                //this.Height = DataAccess.gbl_client_height;
+                //this.Width = DataAccess.gbl_client_width;
 
-            //this.Location = Screen.PrimaryScreen.WorkingArea.Location;
-            Reset();
-            FillDropdown();
+                //this.Location = Screen.PrimaryScreen.WorkingArea.Location;
+                Reset();
+                FillDropdown();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("There are some issue occurs.", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         public void FillDropdown()
@@ -56,19 +63,14 @@ namespace BillingSystem
 
 
             AutoCompleteStringCollection brandCollection = new AutoCompleteStringCollection();
-            dropdownSQL = "select ProductCompanyId, CompanyName from ProductCompanyId where IsDeleted = 0 order by CompanyName asc";
+            dropdownSQL = "select ProductCompanyId, CompanyName from ProductCompany where IsDeleted = 0 order by CompanyName asc";
             customerData = new DataTable();
             customerData = _datalayer.bindDataTable(dropdownSQL);
 
-            DataRow brandRow;
-            brandRow = customerData.NewRow();
-            brandRow.ItemArray = new object[] { 0, "Select Brand" };
-            customerData.Rows.InsertAt(brandRow, 0);
-
-            cmb_Party.AutoCompleteCustomSource = brandCollection;
-            cmb_Party.ValueMember = "ProductCompanyId";
-            cmb_Party.DisplayMember = "CompanyName";
-            cmb_Party.DataSource = customerData;
+            cmb_brand.AutoCompleteCustomSource = brandCollection;
+            cmb_brand.ValueMember = "ProductCompanyId";
+            cmb_brand.DisplayMember = "CompanyName";
+            cmb_brand.DataSource = customerData;
 
             foreach (DataRow row in customerData.Rows) // Loop over the rows.
             {
@@ -81,8 +83,8 @@ namespace BillingSystem
         {
             BindGrid();
             txt_product.Text = txt_category.Text = txt_qty.Text = txt_sale_price.Text = txt_itemno.Text = txt_category.Text = "";
-            cmb_Party.SelectedIndex = 0;
-            cmb_brand.SelectedIndex = 0;
+            cmb_Party.SelectedIndex = -1;
+            cmb_brand.SelectedIndex = -1;
             txt_expiryDate.Refresh();
             btn_save.Text = "SAVE";
             deleteDisable = false;
@@ -166,7 +168,34 @@ namespace BillingSystem
 
         private void btn_save_Click(object sender, EventArgs e)
         {
+            DataSet customerData = new DataSet();
+            string query = string.Empty;
+            string message = string.Empty;
 
+            try
+            {
+                if (cmb_brand.Text.Trim() != "" )
+                {
+                    query = "SELECT ProductCompanyID FROM ProductCompany where CompanyName = '" + cmb_brand.Text.Trim() + "'";
+                    customerData = _datalayer.bindDataSet(query);
+                    if (customerData.Tables[0].Rows.Count <= 0)
+                    {
+                        query = "insert into ProductCompany (CompanyName, CreatedByID) values ('" + cmb_brand.Text.Trim() + "'," + DataAccess.gbl_longUserID + ")";
+                        message = _datalayer.Opration(query);
+
+                        if (message != "Success")
+                        {
+                            MessageBox.Show("Sorry!!! there are some issue to insert brand record, please try again.", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return;
+                        }
+                    }
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Failed to create Purchase record...", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
         }
 
         private void btn_delete_Click(object sender, EventArgs e)

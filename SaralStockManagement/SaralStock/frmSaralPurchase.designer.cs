@@ -115,7 +115,7 @@
             this.tlp_producttitle.Name = "tlp_producttitle";
             this.tlp_producttitle.RowCount = 1;
             this.tlp_producttitle.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlp_producttitle.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tlp_producttitle.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
             this.tlp_producttitle.Size = new System.Drawing.Size(1057, 48);
             this.tlp_producttitle.TabIndex = 0;
             // 
@@ -494,6 +494,7 @@
             this.Name = "frmSaralPurchase";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmSaralPurchase";
+            this.Load += new System.EventHandler(this.frmSaralProduct_Load);
             this.tbl_productmain.ResumeLayout(false);
             this.tbl_productmain.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_master)).EndInit();

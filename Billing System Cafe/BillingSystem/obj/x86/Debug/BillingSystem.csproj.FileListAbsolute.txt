@@ -133,3 +133,6 @@ E:\Hitesh\Project\Billing System\Billing System Cafe\BillingSystem\obj\x86\Debug
 E:\Hitesh\Project\Billing System\Billing System Cafe\BillingSystem\obj\x86\Debug\RdlCompile.compiled
 E:\Hitesh\Project\Billing System\Billing System Cafe\BillingSystem\obj\x86\Debug\BillingSystemCafe.exe
 E:\Hitesh\Project\Billing System\Billing System Cafe\BillingSystem\obj\x86\Debug\BillingSystemCafe.pdb
+E:\Hitesh\Project\SSGithub\dotnet\Billing System Cafe\BillingSystem\bin\Debug\BillingSystemCafe.exe.config
+E:\Hitesh\Project\SSGithub\dotnet\Billing System Cafe\BillingSystem\obj\x86\Debug\BillingSystemCafe.exe
+E:\Hitesh\Project\SSGithub\dotnet\Billing System Cafe\BillingSystem\obj\x86\Debug\BillingSystemCafe.pdb
