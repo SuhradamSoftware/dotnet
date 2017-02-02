@@ -1,0 +1,40 @@
+C:\Users\DOTNET1\Documents\Visual Studio 2010\Festivity\BussinessLogic\bin\Debug\BussinessLogic.dll
+C:\Users\DOTNET1\Documents\Visual Studio 2010\Festivity\BussinessLogic\bin\Debug\BussinessLogic.pdb
+C:\Users\DOTNET1\Documents\Visual Studio 2010\Festivity\BussinessLogic\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\DOTNET1\Documents\Visual Studio 2010\Festivity\BussinessLogic\obj\Debug\BussinessLogic.dll
+C:\Users\DOTNET1\Documents\Visual Studio 2010\Festivity\BussinessLogic\obj\Debug\BussinessLogic.pdb
+C:\Users\DOTNET1\Documents\Visual Studio 2010\Festivity\BussinessLogic\bin\Debug\BussinessObject.dll
+C:\Users\DOTNET1\Documents\Visual Studio 2010\Festivity\BussinessLogic\bin\Debug\DataAccess.dll
+C:\Users\DOTNET1\Documents\Visual Studio 2010\Festivity\BussinessLogic\bin\Debug\BussinessObject.pdb
+C:\Users\DOTNET1\Documents\Visual Studio 2010\Festivity\BussinessLogic\bin\Debug\DataAccess.pdb
+C:\Users\DOTNET1\Documents\Visual Studio 2010\Festivity\BussinessLogic\bin\Debug\GoogleSearchAPI.dll
+E:\New folder\Festivity\BussinessLogic\bin\Debug\BussinessLogic.dll
+E:\New folder\Festivity\BussinessLogic\bin\Debug\BussinessLogic.pdb
+E:\New folder\Festivity\BussinessLogic\bin\Debug\BussinessObject.dll
+E:\New folder\Festivity\BussinessLogic\bin\Debug\DataAccess.dll
+E:\New folder\Festivity\BussinessLogic\bin\Debug\GoogleSearchAPI.dll
+E:\New folder\Festivity\BussinessLogic\bin\Debug\BussinessObject.pdb
+E:\New folder\Festivity\BussinessLogic\bin\Debug\DataAccess.pdb
+E:\New folder\Festivity\BussinessLogic\obj\Debug\ResolveAssemblyReference.cache
+E:\New folder\Festivity\BussinessLogic\obj\Debug\BussinessLogic.dll
+E:\New folder\Festivity\BussinessLogic\obj\Debug\BussinessLogic.pdb
+F:\New folder\Festivity\BussinessLogic\bin\Debug\BussinessLogic.dll
+F:\New folder\Festivity\BussinessLogic\bin\Debug\BussinessLogic.pdb
+F:\New folder\Festivity\BussinessLogic\bin\Debug\BussinessObject.dll
+F:\New folder\Festivity\BussinessLogic\bin\Debug\DataAccess.dll
+F:\New folder\Festivity\BussinessLogic\bin\Debug\GoogleSearchAPI.dll
+F:\New folder\Festivity\BussinessLogic\bin\Debug\BussinessObject.pdb
+F:\New folder\Festivity\BussinessLogic\bin\Debug\DataAccess.pdb
+F:\New folder\Festivity\BussinessLogic\obj\Debug\BussinessLogic.csprojResolveAssemblyReference.cache
+F:\New folder\Festivity\BussinessLogic\obj\Debug\BussinessLogic.dll
+F:\New folder\Festivity\BussinessLogic\obj\Debug\BussinessLogic.pdb
+E:\Work\Festivity\Festivity\BussinessLogic\bin\Debug\BussinessLogic.dll
+E:\Work\Festivity\Festivity\BussinessLogic\bin\Debug\BussinessLogic.pdb
+E:\Work\Festivity\Festivity\BussinessLogic\bin\Debug\BussinessObject.dll
+E:\Work\Festivity\Festivity\BussinessLogic\bin\Debug\DataAccess.dll
+E:\Work\Festivity\Festivity\BussinessLogic\bin\Debug\GoogleSearchAPI.dll
+E:\Work\Festivity\Festivity\BussinessLogic\bin\Debug\BussinessObject.pdb
+E:\Work\Festivity\Festivity\BussinessLogic\bin\Debug\DataAccess.pdb
+E:\Work\Festivity\Festivity\BussinessLogic\obj\Debug\BussinessLogic.csprojResolveAssemblyReference.cache
+E:\Work\Festivity\Festivity\BussinessLogic\obj\Debug\BussinessLogic.dll
+E:\Work\Festivity\Festivity\BussinessLogic\obj\Debug\BussinessLogic.pdb

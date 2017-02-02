@@ -1,0 +1,89 @@
+drop table tbl_invoice;
+drop table tbl_invoice_details;
+drop table tbl_taxes;
+drop table tbl_product;
+drop table tbl_product_stock;
+drop table tbl_point;
+drop table tbl_customer;
+drop table tbl_employee;
+drop table tbl_expense;
+
+CREATE TABLE [tbl_invoice] (
+[fld_invoice_id] bigint IDENTITY (1,1) NOT NULL,
+[fld_invoice_no] nvarchar(20) NULL,
+[fld_customer_id] bigint NULL,
+[fld_invoice_date] datetime NULL,
+[fld_tax] decimal(14, 2) NULL,
+[fld_invoice_amount] decimal(14, 2) NULL
+);
+
+CREATE TABLE [tbl_invoice_details] (
+[fld_detail_id] bigint IDENTITY (1,1) NOT NULL,
+[fld_invoice_id] bigint NULL,
+[fld_product_id] int NULL,
+[fld_amount] decimal(14, 2) NULL,
+[fld_discount] decimal(14, 2) NULL,
+[fld_gross_amount] decimal(14, 2) NULL
+);
+
+CREATE TABLE [tbl_taxes] (
+  [fld_tax_id] int IDENTITY (1,1) NOT NULL
+, [fld_tax_description] nvarchar(100) NULL
+, [fld_tax_rate] money NULL
+);
+
+CREATE TABLE [tbl_product] (
+  [fld_product_id] int IDENTITY (1,1) NOT NULL
+, [fld_product_name] nvarchar(100) NOT NULL
+, [fld_rate] decimal(14, 2) NULL
+, [fld_point] decimal(14, 2) NULL
+);
+
+CREATE TABLE [tbl_product_stock] (
+  [fld_stock_id] bigint IDENTITY (1,1) NOT NULL
+, [fld_product_id] nvarchar(100) NOT NULL
+, [fld_rate] decimal(14, 2) NULL
+, [fld_point] decimal(14, 2) NULL
+, [fld_inward] decimal(14, 2) NULL
+, [fld_outward] decimal(14, 2) NULL
+, [fld_date] datetime NULL  default(GETDATE())
+);
+
+CREATE TABLE [tbl_point] (
+  [fld_point_id] int IDENTITY (1,1) NOT NULL
+, [fld_employee_id] int NULL
+, [fld_product_id] int NULL
+, [fld_product_qty] decimal(14, 2) NULL
+, [fld_point] decimal(14, 2) NULL
+);
+
+CREATE TABLE [tbl_customer] (
+  [fld_customer_id] bigint IDENTITY (1,1) NOT NULL
+, [fld_customer_name] nvarchar(150) NULL
+, [fld_address] nvarchar(250) NULL
+, [fld_city] nvarchar(100) NULL
+, [fld_phone_number] nvarchar(20) NULL
+);
+
+CREATE TABLE [tbl_employee] (
+  [fld_employee_id] int IDENTITY (1,1) NOT NULL
+, [fld_employee_name] nvarchar(150) NULL
+, [fld_address] nvarchar(250) NULL
+, [fld_city] nvarchar(100) NULL
+, [fld_phone_number] nvarchar(20) NULL
+, [fld_joining_date] datetime NULL
+);
+
+CREATE TABLE [tbl_expense] (
+  [fld_expense_id] bigint IDENTITY (1,1) NOT NULL
+, [fld_expense] nvarchar(50) NULL
+, [fld_amount] decimal(14, 2) NULL
+, [fld_date] datetime NULL  default(GETDATE())
+);
+
+CREATE TABLE [tbl_default] (
+  [fld_default_name] nvarchar(30) NULL
+, [fld_value] nvarchar(200) NULL
+);
+
+ENRICH Beauty Zone #Madhav Park-3, Main Road Near Atrey Clinic, # Govardhan Chowk 150ft. Ring Road, Rajkot. # Mansi Kacha : +91 7778829894 #enrich.beautyzone@gmail.com#EBZ/INV/

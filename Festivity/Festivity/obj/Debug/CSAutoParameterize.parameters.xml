@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="ConnectionString-Web.config Connection String" description="ConnectionString Connection String used in web.config by the application to access the database." defaultvalue="Data Source=208.91.198.196;Initial Catalog=suhrac6s_festivity;Integrated Security=False;MultipleActiveResultSets=True;User ID=festivity;Password=Festivity@123" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="E:\\Work\\Festivity\\Festivity\\Festivity\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ConnectionString']/@connectionString" />
+  </parameter>
+</parameters>

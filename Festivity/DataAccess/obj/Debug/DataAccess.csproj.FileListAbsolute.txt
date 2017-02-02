@@ -1,0 +1,28 @@
+C:\Users\DOTNET1\Documents\Visual Studio 2010\Festivity\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\DOTNET1\Documents\Visual Studio 2010\Festivity\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\DOTNET1\Documents\Visual Studio 2010\Festivity\DataAccess\bin\Debug\BussinessObject.dll
+C:\Users\DOTNET1\Documents\Visual Studio 2010\Festivity\DataAccess\bin\Debug\BussinessObject.pdb
+C:\Users\DOTNET1\Documents\Visual Studio 2010\Festivity\DataAccess\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\DOTNET1\Documents\Visual Studio 2010\Festivity\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\DOTNET1\Documents\Visual Studio 2010\Festivity\DataAccess\obj\Debug\DataAccess.pdb
+E:\New folder\Festivity\DataAccess\bin\Debug\DataAccess.dll
+E:\New folder\Festivity\DataAccess\bin\Debug\DataAccess.pdb
+E:\New folder\Festivity\DataAccess\bin\Debug\BussinessObject.dll
+E:\New folder\Festivity\DataAccess\bin\Debug\BussinessObject.pdb
+E:\New folder\Festivity\DataAccess\obj\Debug\ResolveAssemblyReference.cache
+E:\New folder\Festivity\DataAccess\obj\Debug\DataAccess.dll
+E:\New folder\Festivity\DataAccess\obj\Debug\DataAccess.pdb
+F:\New folder\Festivity\DataAccess\bin\Debug\DataAccess.dll
+F:\New folder\Festivity\DataAccess\bin\Debug\DataAccess.pdb
+F:\New folder\Festivity\DataAccess\bin\Debug\BussinessObject.dll
+F:\New folder\Festivity\DataAccess\bin\Debug\BussinessObject.pdb
+F:\New folder\Festivity\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+F:\New folder\Festivity\DataAccess\obj\Debug\DataAccess.dll
+F:\New folder\Festivity\DataAccess\obj\Debug\DataAccess.pdb
+E:\Work\Festivity\Festivity\DataAccess\bin\Debug\DataAccess.dll
+E:\Work\Festivity\Festivity\DataAccess\bin\Debug\DataAccess.pdb
+E:\Work\Festivity\Festivity\DataAccess\bin\Debug\BussinessObject.dll
+E:\Work\Festivity\Festivity\DataAccess\bin\Debug\BussinessObject.pdb
+E:\Work\Festivity\Festivity\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+E:\Work\Festivity\Festivity\DataAccess\obj\Debug\DataAccess.dll
+E:\Work\Festivity\Festivity\DataAccess\obj\Debug\DataAccess.pdb
