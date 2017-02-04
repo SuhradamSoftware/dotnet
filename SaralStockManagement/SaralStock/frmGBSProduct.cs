@@ -296,13 +296,10 @@ namespace BillingSystem
                 }
             }
 
-             
+
         }
 
-
-     
-
-      private void txt_name_KeyDown(object sender, KeyEventArgs e)
+        private void txt_name_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyData == Keys.Enter)
             {
@@ -311,32 +308,32 @@ namespace BillingSystem
             }
         }
 
-      private void txt_ProductDescription_KeyDown(object sender, KeyEventArgs e)
-      {
-          if (e.KeyData == Keys.Enter)
-          {
-              e.SuppressKeyPress = true;
-              SelectNextControl(ActiveControl, true, true, true, true);
-          }
-      }
+        private void txt_ProductDescription_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+                SelectNextControl(ActiveControl, true, true, true, true);
+            }
+        }
 
-      private void txt_price_KeyDown(object sender, KeyEventArgs e)
-      {
-          if (e.KeyData == Keys.Enter)
-          {
-              e.SuppressKeyPress = true;
-              SelectNextControl(ActiveControl, true, true, true, true);
-          }
-      }
+        private void txt_price_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+                SelectNextControl(ActiveControl, true, true, true, true);
+            }
+        }
 
-      private void txt_Description_KeyDown(object sender, KeyEventArgs e)
-      {
-          if (e.KeyData == Keys.Enter)
-          {
-              e.SuppressKeyPress = true;
-              SelectNextControl(ActiveControl, true, true, true, true);
-          }
-      }
+        private void txt_Description_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+                SelectNextControl(ActiveControl, true, true, true, true);
+            }
+        }
 
         private void txt_search_TextChanged(object sender, EventArgs e)
         {
@@ -366,5 +363,5 @@ namespace BillingSystem
         }
 
     }
-       
+
 }

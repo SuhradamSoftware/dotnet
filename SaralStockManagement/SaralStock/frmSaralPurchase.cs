@@ -128,6 +128,7 @@ namespace BillingSystem
             cmb_brand.Text = "";
             cmb_Category.Text = "";
             cmb_ItemNo.Text = "";
+            txt_Search.Text = "";
             txt_expiryDate.Refresh();
             txt_expiryDate.Checked = false;
             btn_save.Text = "SAVE";
@@ -144,6 +145,7 @@ namespace BillingSystem
             query = query + " From Purchase PC INNER JOIN Product P ON P.ProductID = PC.ProductID";
             query = query + " LEFT JOIN Category C ON C.CategoryID = P.CategoryID";
             query = query + " LEFT JOIN ProductCompany PRC ON PC.ProductCompanyID = PRC.ProductCompanyID";
+            query = query + " WHERE PC.PurChaseDate BETWEEN '" + txt_StartDate.Value.Date + "' AND '" + txt_EndDate.Value.Date.AddHours(24) + "'";
             _ds = _datalayer.bindDataSet(query);
 
             if (_ds.Tables.Count > 0)
@@ -627,6 +629,34 @@ namespace BillingSystem
         public static bool IsOdd(int value)
         {
             return value % 2 != 0;
+        }
+
+        private void btn_apply_Click(object sender, EventArgs e)
+        {
+            DataSet _ds = new DataSet();
+            string query = string.Empty;
+
+            query = "Select PC.PurchaseID,PC.PurChaseDate,P.ProductCode,P.ProductName, C.CategoryName,PRC.CompanyName, PC.Quantity ";
+            query = query + " From Purchase PC INNER JOIN Product P ON P.ProductID = PC.ProductID";
+            query = query + " LEFT JOIN Category C ON C.CategoryID = P.CategoryID";
+            query = query + " LEFT JOIN ProductCompany PRC ON PC.ProductCompanyID = PRC.ProductCompanyID";
+            query = query + " WHERE PC.PurChaseDate BETWEEN '" + txt_StartDate.Value.Date + "' AND '" + txt_EndDate.Value.Date.AddHours(24) + "'";
+
+            if (txt_Search.Text.ToString() != "")
+            {
+                query = query + " AND (P.ProductCode LIKE '%" + txt_Search.Text + "%' OR P.ProductName LIKE '%" + txt_Search.Text + "%' )";
+            }
+
+            _ds = _datalayer.bindDataSet(query);
+
+            if (_ds.Tables.Count > 0)
+            {
+                dgv_master.DataSource = _ds.Tables[0];
+            }
+
+            this.dgv_master.Columns["CategoryName"].ValueType = typeof(String);
+            this.dgv_master.Columns["CompanyName"].ValueType = typeof(String);
+            this.dgv_master.Columns["PurChaseDate"].ValueType = typeof(DateTime);
         }
     }
 }
