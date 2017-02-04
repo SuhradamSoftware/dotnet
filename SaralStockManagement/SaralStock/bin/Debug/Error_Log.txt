@@ -522,3 +522,31 @@ Reson : Bind data set
 Error Message : The column name is not valid. [ Node name (if any) = P,Column name = ProductCompanyID ]
 Date Time : 04-02-2017 02:25:35
 ----------------------------------------------------------------
+Reson : Bind data set
+Error Message : The column name is not valid. [ Node name (if any) = um,Column name = ProductCompany ]
+Date Time : 04-02-2017 07:28:52
+----------------------------------------------------------------
+Reson : Bind data set
+Error Message : The column name is not valid. [ Node name (if any) = um,Column name = ProductCompany ]
+Date Time : 04-02-2017 07:30:52
+----------------------------------------------------------------
+Reson : Bind data set
+Error Message : The column name is not valid. [ Node name (if any) = um,Column name = ProductCompany ]
+Date Time : 04-02-2017 07:30:55
+----------------------------------------------------------------
+Reson : Bind data set
+Error Message : The column name is not valid. [ Node name (if any) = um,Column name = ProductCompany ]
+Date Time : 04-02-2017 07:30:58
+----------------------------------------------------------------
+Reson : Bind data set
+Error Message : The column name is not valid. [ Node name (if any) = um,Column name = ProductCompany ]
+Date Time : 04-02-2017 07:31:02
+----------------------------------------------------------------
+Reson : Bind data set
+Error Message : The specified table does not exist. [ SSNameValues ]
+Date Time : 04-02-2017 07:31:05
+----------------------------------------------------------------
+Reson : Bind data set
+Error Message : The column name is not valid. [ Node name (if any) = um,Column name = ProductCompany ]
+Date Time : 04-02-2017 07:31:10
+----------------------------------------------------------------

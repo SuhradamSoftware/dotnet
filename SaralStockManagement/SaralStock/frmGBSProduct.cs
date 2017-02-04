@@ -20,6 +20,7 @@ namespace BillingSystem
 
         private void frmGBSProduct_Load(object sender, EventArgs e)
         {
+            FillDropdown();
             Reset();
         }
 
@@ -27,12 +28,34 @@ namespace BillingSystem
         {
             BindGrid();
 
-            txt_ProductDescription.Text = txt_name.Text = txt_price.Text = txt_company.Text = "";
-
+            txt_ProductName.Text = txt_code.Text = txt_price.Text = txt_Description.Text = "";
+            cmb_Category.Text = "";
             btn_save.Text = "SAVE";
             deleteDisable = false;
             btn_delete.Visible = false;
             ep1.Clear();
+        }
+
+        public void FillDropdown()
+        {
+            cmb_Category.Items.Insert(0, "Select...");
+            cmb_Category.SelectedIndex = 0;
+
+            AutoCompleteStringCollection categoryCollection = new AutoCompleteStringCollection();
+            string dropdownSQL = "select CategoryId, CategoryName from Category where IsDeleted = 0 order by CategoryName asc";
+            DataTable customerData = new DataTable();
+            customerData = _datalayer.bindDataTable(dropdownSQL);
+
+            cmb_Category.AutoCompleteCustomSource = categoryCollection;
+            cmb_Category.ValueMember = "CategoryId";
+            cmb_Category.DisplayMember = "CategoryName";
+            cmb_Category.DataSource = customerData;
+
+            foreach (DataRow row in customerData.Rows) // Loop over the rows.
+            {
+                categoryCollection.Add(row["CategoryName"].ToString());
+            }
+
         }
 
         public void BindGrid()
@@ -40,7 +63,9 @@ namespace BillingSystem
             DataSet _ds = new DataSet();
             string query = string.Empty;
 
-            query = "SELECT um.ProductID, um.ProductName, um.ProductDescription,um.ProductCompany, um.Price FROM Product AS um where um.IsDeleted = 0";
+            query = "SELECT um.ProductID,ProductCode, um.ProductName, um.ProductDescription,C.CategoryName, um.Price,um.ProductStock FROM Product AS um ";
+            query = query + " INNER JOIN Category C ON C.CategoryID = um.CategoryID";
+            query = query + " where um.IsDeleted = 0";
 
             _ds = _datalayer.bindDataSet(query);
 
@@ -57,11 +82,19 @@ namespace BillingSystem
                 if (dgv_master.SelectedRows.Count > 0)
                 {
                     lbl_id.Text = dgv_master.CurrentRow.Cells["ProductID"].Value.ToString();
-                    txt_name.Text = dgv_master.CurrentRow.Cells["ProductName"].Value.ToString();
-                    txt_ProductDescription.Text = dgv_master.CurrentRow.Cells["ProductDescription"].Value.ToString();
-                    txt_company.Text = dgv_master.CurrentRow.Cells["ProductCompany"].Value.ToString();
+                    txt_code.Text = dgv_master.CurrentRow.Cells["ProductCode"].Value.ToString();
+                    txt_ProductName.Text = dgv_master.CurrentRow.Cells["ProductName"].Value.ToString();
+                    txt_Description.Text = dgv_master.CurrentRow.Cells["ProductDescription"].Value.ToString();
                     txt_price.Text = string.Format("{0:#,##0.00}", dgv_master.CurrentRow.Cells["Price"].Value.ToString());
-
+                    txt_Stock.Text = string.Format("{0:#,##0.00}", dgv_master.CurrentRow.Cells["ProductStock"].Value.ToString());
+                    if (string.IsNullOrEmpty(dgv_master.CurrentRow.Cells["CategoryName"].Value.ToString()) == false)
+                    {
+                        int comboIndex = cmb_Category.FindString(dgv_master.CurrentRow.Cells["CategoryName"].Value.ToString());
+                        if (comboIndex > 0)
+                        {
+                            cmb_Category.SelectedIndex = comboIndex;
+                        }
+                    }
                     btn_save.Text = "UPDATE";
                     deleteDisable = true;
                     btn_delete.Visible = true;
@@ -101,19 +134,29 @@ namespace BillingSystem
 
         private void btn_save_Click(object sender, EventArgs e)
         {
-            if (txt_name.Text.ToString() == "")
+            int categoryID = 0;
+
+            if (txt_code.Text.ToString() == "")
             {
                 ep1.Clear();
-                ep1.SetError(txt_name, "Please enter Product name.");
-                txt_name.Focus();
+                ep1.SetError(txt_code, "Please enter Item code.");
+                txt_code.Focus();
                 return;
             }
 
-            if (txt_ProductDescription.Text.ToString() == "")
+            if (txt_ProductName.Text.ToString() == "")
             {
                 ep1.Clear();
-                ep1.SetError(txt_ProductDescription, "Please enter Product Description.");
-                txt_ProductDescription.Focus();
+                ep1.SetError(txt_ProductName, "Please enter Item Name.");
+                txt_ProductName.Focus();
+                return;
+            }
+
+            if (cmb_Category.Text.ToString() == "")
+            {
+                ep1.Clear();
+                ep1.SetError(cmb_Category, "Please select Category.");
+                cmb_Category.Focus();
                 return;
             }
 
@@ -122,11 +165,16 @@ namespace BillingSystem
                 txt_price.Text = "0.00";
             }
 
+            if (CreateCategory(cmb_Category.Text.Trim(), ref categoryID) == false)
+            {
+                return;
+            }
+
             string query = string.Empty;
             if (btn_save.Text == "SAVE")
-                query = "INSERT INTO Product (ProductName, ProductDescription, ProductCompany, Price, CreatedByID) values ('" + txt_name.Text.Trim() + "','" + txt_ProductDescription.Text.Trim() + "','" + txt_company.Text.Trim() + "'," + txt_price.Text.Trim() + "," + DataAccess.gbl_longUserID + ")";
+                query = "INSERT INTO Product (ProductCode, ProductName, ProductDescription, Price, CategoryID, CreatedByID) values ('" + txt_code.Text.Trim() + "','" + txt_ProductName.Text.Trim() + "','" + txt_Description.Text.Trim() + "'," + txt_price.Text.Trim() + "," + categoryID + "," + DataAccess.gbl_longUserID + ")";
             else
-                query = "UPDATE Product SET ProductName = '" + txt_name.Text.Trim() + "', ProductDescription = '" + txt_ProductDescription.Text.Trim() + "', ProductCompany = '" + txt_company.Text.Trim() + "', Price = " + txt_price.Text.Trim() + ",UpdatedByID = " + DataAccess.gbl_longUserID + ", UpdatedDate = GETDATE() where ProductID = " + lbl_id.Text.Trim();
+                query = "UPDATE Product SET ProductCode = '" + txt_code.Text.Trim() + "', ProductName = '" + txt_ProductName.Text.Trim() + "', ProductDescription = '" + txt_Description.Text.Trim() + "', CategoryID = " + categoryID + ", Price = " + txt_price.Text.Trim() + ",UpdatedByID = " + DataAccess.gbl_longUserID + ", UpdatedDate = GETDATE() where ProductID = " + lbl_id.Text.Trim();
             string message = _datalayer.Opration(query);
 
             if (message == "Success")
@@ -140,11 +188,50 @@ namespace BillingSystem
             }
         }
 
+        public bool CreateCategory(string categoryName, ref int categoryID)
+        {
+            bool returnValue = true;
+            DataSet customerData = new DataSet();
+            string query = string.Empty;
+            string message = string.Empty;
+
+            if (categoryName != "")
+            {
+                query = "SELECT CategoryID FROM Category where CategoryName = '" + categoryName + "'";
+                customerData = _datalayer.bindDataSet(query);
+                if (customerData.Tables[0].Rows.Count <= 0)
+                {
+                    query = "INSERT INTO Category (CategoryName, CreatedByID) values ('" + categoryName + "'," + DataAccess.gbl_longUserID + ")";
+                    message = _datalayer.Opration(query);
+
+                    if (message != "Success")
+                    {
+                        MessageBox.Show("Sorry!!! there are some issue to insert Category record, please try again.", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        returnValue = false;
+                    }
+
+                    query = "SELECT CategoryID FROM Category where CategoryName = '" + categoryName + "'";
+                    customerData = _datalayer.bindDataSet(query);
+                    if (customerData.Tables[0].Rows.Count > 0)
+                    {
+                        categoryID = Convert.ToInt32(customerData.Tables[0].Rows[0]["CategoryID"].ToString());
+                    }
+                }
+                else
+                {
+                    categoryID = Convert.ToInt32(customerData.Tables[0].Rows[0]["CategoryID"].ToString());
+                }
+            }
+
+            return returnValue;
+
+        }
         private void btn_delete_Click(object sender, EventArgs e)
         {
             if (deleteDisable)
                 DeleteRecord();
         }
+
 
         private void btn_reset_Click(object sender, EventArgs e)
         {
@@ -159,10 +246,12 @@ namespace BillingSystem
         private void dgv_master_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
         {
             dgv_master.Columns["ProductID"].Visible = false;
-            dgv_master.Columns["ProductName"].HeaderText = "Product Name";
-            dgv_master.Columns["ProductDescription"].HeaderText = "Description";
-            dgv_master.Columns["ProductCompany"].HeaderText = "Company";
+            dgv_master.Columns["ProductDescription"].Visible = false;
+            dgv_master.Columns["ProductName"].HeaderText = "Item Name";
+            dgv_master.Columns["ProductCode"].HeaderText = "Code";
+            dgv_master.Columns["CategoryName"].HeaderText = "Category";
             dgv_master.Columns["Price"].HeaderText = "Price";
+            dgv_master.Columns["ProductStock"].HeaderText = "Stock";
 
             foreach (DataGridViewRow row in dgv_master.Rows)
             {
@@ -240,7 +329,7 @@ namespace BillingSystem
           }
       }
 
-      private void txt_company_KeyDown(object sender, KeyEventArgs e)
+      private void txt_Description_KeyDown(object sender, KeyEventArgs e)
       {
           if (e.KeyData == Keys.Enter)
           {
@@ -253,7 +342,7 @@ namespace BillingSystem
         {
             if (txt_search.Text != "Search...")
             {
-                (dgv_master.DataSource as DataTable).DefaultView.RowFilter = string.Format("ProductName LIKE '%{0}%' OR ProductDescription LIKE '%{0}%' OR ProductCompany LIKE '%{0}%'", txt_search.Text);
+                (dgv_master.DataSource as DataTable).DefaultView.RowFilter = string.Format("ProductCode LIKE '%{0}%' OR ProductName LIKE '%{0}%' OR ProductDescription LIKE '%{0}%' OR CategoryName LIKE '%{0}%'", txt_search.Text);
                 dgv_master.Refresh();
             }
         }
@@ -275,11 +364,6 @@ namespace BillingSystem
                 txt_search.ForeColor = System.Drawing.SystemColors.WindowFrame;
             }
         }
-
-        private void txt_name_TextChanged(object sender, EventArgs e)
-        {
-
-        } 
 
     }
        

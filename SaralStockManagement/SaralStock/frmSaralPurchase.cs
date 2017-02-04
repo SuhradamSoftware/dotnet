@@ -128,10 +128,6 @@ namespace BillingSystem
             cmb_brand.Text = "";
             cmb_Category.Text = "";
             cmb_ItemNo.Text = "";
-            cmb_Party.SelectedIndex = 0;
-            cmb_brand.SelectedIndex = 0;
-            cmb_Category.SelectedIndex = 0;
-            cmb_ItemNo.SelectedIndex = 0;
             txt_expiryDate.Refresh();
             txt_expiryDate.Checked = false;
             btn_save.Text = "SAVE";
@@ -218,6 +214,8 @@ namespace BillingSystem
             int? partyID = null;
             int? productCompanyID = null;
             int productID = 0;
+            bool returnValue = true;
+            decimal productStock = 0;
             try
             {
 
@@ -241,14 +239,14 @@ namespace BillingSystem
                     return;
                 }
 
-                if (CreateUpdateProduct(cmb_ItemNo.Text.Trim(), categoryID, ref productID) == false)
+                if (CreateUpdateProduct(cmb_ItemNo.Text.Trim(), categoryID, ref productID, ref productStock) == false)
                 {
                     return;
                 }
 
-                DateTime? expiryDate =null;
+                DateTime? expiryDate = null;
 
-                if(txt_expiryDate.Checked)
+                if (txt_expiryDate.Checked)
                 {
                     expiryDate = txt_expiryDate.Value;
                 }
@@ -262,9 +260,21 @@ namespace BillingSystem
                 {
                     //   query = "UPDATE Product SET ProductName = '" + txt_name.Text.Trim() + "', ProductDescription = '" + txt_ProductDescription.Text.Trim() + "', ProductCompany = '" + txt_company.Text.Trim() + "', Price = " + txt_price.Text.Trim() + ",UpdatedByID = " + DataAccess.gbl_longUserID + ", UpdatedDate = GETDATE() where ProductID = " + lbl_id.Text.Trim();
                 }
-                 message = _datalayer.Opration(query);
+                message = _datalayer.Opration(query);
 
-                if (message == "Success")
+                if (message != "Success")
+                {
+                    returnValue = false;
+                }
+
+                productStock = productStock + Convert.ToDecimal(txt_qty.Text.Trim());
+
+                if (returnValue)
+                {
+                    returnValue = UpdateStock(productID, productStock);
+                }
+
+                if (returnValue)
                 {
                     MessageBox.Show("Data Saved Successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Reset();
@@ -288,7 +298,7 @@ namespace BillingSystem
 
         private void btn_reset_Click(object sender, EventArgs e)
         {
-
+            Reset();
         }
 
         public bool ValidateData()
@@ -324,7 +334,7 @@ namespace BillingSystem
             else if (cmb_Category.Text.ToString() == "")
             {
                 ep1.Clear();
-                ep1.SetError(cmb_ItemNo, "Please select Category.");
+                ep1.SetError(cmb_Category, "Please select Category.");
                 cmb_Category.Focus();
                 MessageBox.Show("Please select Category.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 returnValue = false;
@@ -455,7 +465,7 @@ namespace BillingSystem
             return returnValue;
         }
 
-        public bool CreateUpdateProduct(string productCode, int? categoryID, ref int productID)
+        public bool CreateUpdateProduct(string productCode, int? categoryID, ref int productID, ref decimal productStock)
         {
             bool returnValue = true;
             DataSet customerData = new DataSet();
@@ -464,7 +474,7 @@ namespace BillingSystem
 
             if (productCode != "")
             {
-                query = "SELECT ProductID FROM Product where ProductCode = '" + productCode + "'";
+                query = "SELECT ProductID,ProductStock FROM Product where ProductCode = '" + productCode + "'";
                 customerData = _datalayer.bindDataSet(query);
                 if (customerData.Tables[0].Rows.Count <= 0)
                 {
@@ -477,16 +487,18 @@ namespace BillingSystem
                         returnValue = false;
                     }
 
-                    query = "SELECT ProductID FROM Product where ProductCode = '" + productCode + "'";
+                    query = "SELECT ProductID,ProductStock FROM Product where ProductCode = '" + productCode + "'";
                     customerData = _datalayer.bindDataSet(query);
                     if (customerData.Tables[0].Rows.Count > 0)
                     {
                         productID = Convert.ToInt32(customerData.Tables[0].Rows[0]["ProductID"].ToString());
+                        productStock = Convert.ToDecimal(customerData.Tables[0].Rows[0]["ProductStock"].ToString());
                     }
                 }
                 else
                 {
                     productID = Convert.ToInt32(customerData.Tables[0].Rows[0]["ProductID"].ToString());
+                    productStock = Convert.ToDecimal(customerData.Tables[0].Rows[0]["ProductStock"].ToString());
 
                     query = "UPDATE Product SET ProductCode = '" + productCode + "', ProductName = '" + txt_product.Text.Trim() + "', CategoryID = " + categoryID + ", Price = " + txt_PurchasePrice.Text.Trim() + ",UpdatedByID = " + DataAccess.gbl_longUserID + ", UpdatedDate = GETDATE() where ProductID = " + productID;
                     message = _datalayer.Opration(query);
@@ -495,6 +507,30 @@ namespace BillingSystem
                         MessageBox.Show("Sorry!!! there are some issue to update Product record, please try again.", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         returnValue = false;
                     }
+                }
+            }
+
+            return returnValue;
+        }
+
+        public bool UpdateStock(int productID, decimal productStock)
+        {
+            bool returnValue = true;
+            DataSet customerData = new DataSet();
+            string query = string.Empty;
+            string message = string.Empty;
+            query = "SELECT ProductID FROM Product where ProductID = " + productID;
+            customerData = _datalayer.bindDataSet(query);
+            if (customerData.Tables[0].Rows.Count > 0)
+            {
+                productID = Convert.ToInt32(customerData.Tables[0].Rows[0]["ProductID"].ToString());
+
+                query = "UPDATE Product SET ProductStock = " + productStock + " WHERE ProductID = " + productID;
+                message = _datalayer.Opration(query);
+                if (message != "Success")
+                {
+                    MessageBox.Show("Sorry!!! there are some issue to update Product stock record, please try again.", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    returnValue = false;
                 }
             }
 
