@@ -233,7 +233,7 @@
             this.Location = new System.Drawing.Point(60, 20);
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "Simple Billing System";
+            this.Text = ".";
             this.Load += new System.EventHandler(this.frmGBSMain_Load);
             this.maintitlepanel.ResumeLayout(false);
             this.maintitlepanel.PerformLayout();

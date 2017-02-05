@@ -1,6 +1,6 @@
 ﻿namespace BillingSystem
 {
-    partial class frmSaralPurchase
+    partial class PurchaseEntryForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,9 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             this.tbl_productmain = new System.Windows.Forms.TableLayoutPanel();
+            this.dgv_master = new System.Windows.Forms.DataGridView();
             this.tlp_producttitle = new System.Windows.Forms.TableLayoutPanel();
             this.txt_Details = new System.Windows.Forms.Label();
             this.tbl_productform = new System.Windows.Forms.TableLayoutPanel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.cmb_Category = new System.Windows.Forms.ComboBox();
             this.txt_PurchasePrice = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -43,39 +46,36 @@
             this.label5 = new System.Windows.Forms.Label();
             this.lbl_price = new System.Windows.Forms.Label();
             this.txt_sale_price = new System.Windows.Forms.TextBox();
-            this.txt_expiryDate = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btn_reset = new System.Windows.Forms.Button();
             this.btn_delete = new System.Windows.Forms.Button();
             this.btn_save = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.txt_product = new System.Windows.Forms.TextBox();
-            this.lbl_id = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txt_qty = new System.Windows.Forms.TextBox();
             this.lbl_qty = new System.Windows.Forms.Label();
-            this.ep1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.dgv_master = new System.Windows.Forms.DataGridView();
+            this.txt_expiryDate = new System.Windows.Forms.DateTimePicker();
+            this.lbl_id = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.txt_Search = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.txt_StartDate = new System.Windows.Forms.DateTimePicker();
             this.label11 = new System.Windows.Forms.Label();
             this.txt_EndDate = new System.Windows.Forms.DateTimePicker();
-            this.label12 = new System.Windows.Forms.Label();
             this.btn_apply = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.txt_Search = new System.Windows.Forms.TextBox();
+            this.ep1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.tbl_productmain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_master)).BeginInit();
             this.tlp_producttitle.SuspendLayout();
             this.tbl_productform.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ep1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_master)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ep1)).BeginInit();
             this.SuspendLayout();
             // 
             // tbl_productmain
@@ -99,6 +99,21 @@
             this.tbl_productmain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tbl_productmain.Size = new System.Drawing.Size(1057, 621);
             this.tbl_productmain.TabIndex = 0;
+            // 
+            // dgv_master
+            // 
+            this.dgv_master.AllowDrop = true;
+            this.dgv_master.AllowUserToAddRows = false;
+            this.dgv_master.AllowUserToDeleteRows = false;
+            this.dgv_master.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_master.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgv_master.Location = new System.Drawing.Point(3, 408);
+            this.dgv_master.Name = "dgv_master";
+            this.dgv_master.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_master.Size = new System.Drawing.Size(1051, 188);
+            this.dgv_master.TabIndex = 35;
+            this.dgv_master.TabStop = false;
+            this.dgv_master.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dgv_master_DataBindingComplete);
             // 
             // tlp_producttitle
             // 
@@ -172,6 +187,32 @@
             this.tbl_productform.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 21.28172F));
             this.tbl_productform.Size = new System.Drawing.Size(1057, 247);
             this.tbl_productform.TabIndex = 1;
+            // 
+            // label8
+            // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(77)))), ((int)(((byte)(84)))));
+            this.label8.Location = new System.Drawing.Point(3, 164);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(167, 21);
+            this.label8.TabIndex = 37;
+            this.label8.Text = "Expiry Date :";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(77)))), ((int)(((byte)(84)))));
+            this.label7.Location = new System.Drawing.Point(3, 209);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(167, 21);
+            this.label7.TabIndex = 36;
+            this.label7.Text = "Details :";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // cmb_Category
             // 
@@ -299,18 +340,6 @@
             this.txt_sale_price.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Control_KeyDown);
             this.txt_sale_price.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_KeyPress);
             // 
-            // txt_expiryDate
-            // 
-            this.txt_expiryDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.txt_expiryDate.Location = new System.Drawing.Point(176, 163);
-            this.txt_expiryDate.Margin = new System.Windows.Forms.Padding(3, 7, 3, 3);
-            this.txt_expiryDate.Name = "txt_expiryDate";
-            this.txt_expiryDate.ShowCheckBox = true;
-            this.txt_expiryDate.Size = new System.Drawing.Size(111, 20);
-            this.txt_expiryDate.TabIndex = 9;
-            this.txt_expiryDate.Value = new System.DateTime(2017, 2, 4, 0, 0, 0, 0);
-            this.txt_expiryDate.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Control_KeyDown);
-            // 
             // label6
             // 
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -385,6 +414,19 @@
             this.btn_save.UseVisualStyleBackColor = false;
             this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbl_productform.SetColumnSpan(this.textBox1, 2);
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.textBox1.Location = new System.Drawing.Point(176, 198);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(492, 44);
+            this.textBox1.TabIndex = 10;
+            this.textBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Control_KeyDown);
+            // 
             // txt_product
             // 
             this.txt_product.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -395,18 +437,6 @@
             this.txt_product.Size = new System.Drawing.Size(334, 29);
             this.txt_product.TabIndex = 2;
             this.txt_product.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Control_KeyDown);
-            // 
-            // lbl_id
-            // 
-            this.lbl_id.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_id.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_id.Location = new System.Drawing.Point(4, 599);
-            this.lbl_id.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbl_id.Name = "lbl_id";
-            this.lbl_id.Size = new System.Drawing.Size(45, 22);
-            this.lbl_id.TabIndex = 34;
-            this.lbl_id.Text = "lbl_id";
-            this.lbl_id.Visible = false;
             // 
             // label2
             // 
@@ -460,50 +490,29 @@
             this.lbl_qty.Text = "Qty. :";
             this.lbl_qty.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // ep1
+            // txt_expiryDate
             // 
-            this.ep1.ContainerControl = this;
+            this.txt_expiryDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txt_expiryDate.Location = new System.Drawing.Point(176, 163);
+            this.txt_expiryDate.Margin = new System.Windows.Forms.Padding(3, 7, 3, 3);
+            this.txt_expiryDate.Name = "txt_expiryDate";
+            this.txt_expiryDate.ShowCheckBox = true;
+            this.txt_expiryDate.Size = new System.Drawing.Size(111, 20);
+            this.txt_expiryDate.TabIndex = 9;
+            this.txt_expiryDate.Value = new System.DateTime(2017, 2, 4, 0, 0, 0, 0);
+            this.txt_expiryDate.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Control_KeyDown);
             // 
-            // label7
+            // lbl_id
             // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(77)))), ((int)(((byte)(84)))));
-            this.label7.Location = new System.Drawing.Point(3, 209);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(167, 21);
-            this.label7.TabIndex = 36;
-            this.label7.Text = "Details :";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label8
-            // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(77)))), ((int)(((byte)(84)))));
-            this.label8.Location = new System.Drawing.Point(3, 164);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(167, 21);
-            this.label8.TabIndex = 37;
-            this.label8.Text = "Expiry Date :";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // dgv_master
-            // 
-            this.dgv_master.AllowDrop = true;
-            this.dgv_master.AllowUserToAddRows = false;
-            this.dgv_master.AllowUserToDeleteRows = false;
-            this.dgv_master.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_master.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgv_master.Location = new System.Drawing.Point(3, 408);
-            this.dgv_master.Name = "dgv_master";
-            this.dgv_master.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_master.Size = new System.Drawing.Size(1051, 188);
-            this.dgv_master.TabIndex = 35;
-            this.dgv_master.TabStop = false;
-            this.dgv_master.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dgv_master_DataBindingComplete);
+            this.lbl_id.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_id.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_id.Location = new System.Drawing.Point(4, 599);
+            this.lbl_id.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_id.Name = "lbl_id";
+            this.lbl_id.Size = new System.Drawing.Size(45, 22);
+            this.lbl_id.TabIndex = 34;
+            this.lbl_id.Text = "lbl_id";
+            this.lbl_id.Visible = false;
             // 
             // tableLayoutPanel2
             // 
@@ -528,6 +537,29 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 32.40741F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1034, 104);
             this.tableLayoutPanel2.TabIndex = 36;
+            // 
+            // txt_Search
+            // 
+            this.txt_Search.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txt_Search.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_Search.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.txt_Search.Location = new System.Drawing.Point(176, 73);
+            this.txt_Search.Name = "txt_Search";
+            this.txt_Search.Size = new System.Drawing.Size(334, 29);
+            this.txt_Search.TabIndex = 37;
+            // 
+            // label12
+            // 
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(77)))), ((int)(((byte)(84)))));
+            this.label12.Location = new System.Drawing.Point(3, 76);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(167, 21);
+            this.label12.TabIndex = 13;
+            this.label12.Text = "Item:";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label9
             // 
@@ -590,19 +622,6 @@
             this.txt_EndDate.TabIndex = 12;
             this.txt_EndDate.Value = new System.DateTime(2017, 2, 4, 0, 0, 0, 0);
             // 
-            // label12
-            // 
-            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(77)))), ((int)(((byte)(84)))));
-            this.label12.Location = new System.Drawing.Point(3, 76);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(167, 21);
-            this.label12.TabIndex = 13;
-            this.label12.Text = "Item:";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // btn_apply
             // 
             this.btn_apply.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(211)))), ((int)(((byte)(120)))));
@@ -617,50 +636,31 @@
             this.btn_apply.UseVisualStyleBackColor = false;
             this.btn_apply.Click += new System.EventHandler(this.btn_apply_Click);
             // 
-            // textBox1
+            // ep1
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbl_productform.SetColumnSpan(this.textBox1, 2);
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.textBox1.Location = new System.Drawing.Point(176, 198);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(492, 44);
-            this.textBox1.TabIndex = 10;
-            this.textBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Control_KeyDown);
+            this.ep1.ContainerControl = this;
             // 
-            // txt_Search
-            // 
-            this.txt_Search.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txt_Search.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_Search.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.txt_Search.Location = new System.Drawing.Point(176, 73);
-            this.txt_Search.Name = "txt_Search";
-            this.txt_Search.Size = new System.Drawing.Size(334, 29);
-            this.txt_Search.TabIndex = 37;
-            // 
-            // frmSaralPurchase
+            // PurchaseEntryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1057, 621);
             this.Controls.Add(this.tbl_productmain);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmSaralPurchase";
+            this.Name = "PurchaseEntryForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmSaralPurchase";
             this.Load += new System.EventHandler(this.frmSaralProduct_Load);
             this.tbl_productmain.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_master)).EndInit();
             this.tlp_producttitle.ResumeLayout(false);
             this.tlp_producttitle.PerformLayout();
             this.tbl_productform.ResumeLayout(false);
             this.tbl_productform.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ep1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_master)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ep1)).EndInit();
             this.ResumeLayout(false);
 
         }

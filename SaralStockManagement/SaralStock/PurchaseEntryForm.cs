@@ -9,11 +9,11 @@ using System.Windows.Forms;
 
 namespace BillingSystem
 {
-    public partial class frmSaralPurchase : Form
+    public partial class PurchaseEntryForm : Form
     {
         DataLayer _datalayer = new DataLayer();
         int comboIndex = 0;
-        public frmSaralPurchase()
+        public PurchaseEntryForm()
         {
             InitializeComponent();
         }
@@ -122,18 +122,22 @@ namespace BillingSystem
 
         public void Reset()
         {
-            BindGrid();
-            txt_product.Text = txt_product.Text = txt_qty.Text = txt_sale_price.Text = txt_PurchasePrice.Text =  "";
+            txt_product.Text = txt_product.Text = txt_qty.Text = txt_sale_price.Text = txt_PurchasePrice.Text = "";
             cmb_Party.Text = "";
             cmb_brand.Text = "";
             cmb_Category.Text = "";
             cmb_ItemNo.Text = "";
             txt_Search.Text = "";
+            txt_StartDate.Value = DateTime.Now;
+            txt_EndDate.Value = DateTime.Now;
+            txt_expiryDate.Value = DateTime.Now.AddYears(2);
             txt_expiryDate.Refresh();
             txt_expiryDate.Checked = false;
             btn_save.Text = "SAVE";
             btn_delete.Visible = false;
             ep1.Clear();
+
+            BindGrid();
         }
 
         public void BindGrid()

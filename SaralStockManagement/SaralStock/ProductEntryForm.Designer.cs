@@ -1,6 +1,6 @@
 ﻿namespace BillingSystem
 {
-    partial class frmGBSProduct
+    partial class ProductEntryForm
     {
         /// <summary>
         /// Required designer variable.

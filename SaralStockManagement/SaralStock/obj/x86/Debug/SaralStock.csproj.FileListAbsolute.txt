@@ -25,12 +25,12 @@ E:\Hitesh\Project\SSGithub\dotnet\SaralStockManagement\SaralStock\bin\Debug\Sara
 E:\Hitesh\Project\SSGithub\dotnet\SaralStockManagement\SaralStock\bin\Debug\SaralStock.exe
 E:\Hitesh\Project\SSGithub\dotnet\SaralStockManagement\SaralStock\bin\Debug\SaralStock.pdb
 E:\Hitesh\Project\SSGithub\dotnet\SaralStockManagement\SaralStock\obj\x86\Debug\ResolveAssemblyReference.cache
-E:\Hitesh\Project\SSGithub\dotnet\SaralStockManagement\SaralStock\obj\x86\Debug\BillingSystem.frmGBSCustomer.resources
 E:\Hitesh\Project\SSGithub\dotnet\SaralStockManagement\SaralStock\obj\x86\Debug\BillingSystem.frmGBSInvoice.resources
 E:\Hitesh\Project\SSGithub\dotnet\SaralStockManagement\SaralStock\obj\x86\Debug\BillingSystem.frmMain.resources
-E:\Hitesh\Project\SSGithub\dotnet\SaralStockManagement\SaralStock\obj\x86\Debug\BillingSystem.frmGBSProduct.resources
-E:\Hitesh\Project\SSGithub\dotnet\SaralStockManagement\SaralStock\obj\x86\Debug\BillingSystem.frmGBSSetting.resources
-E:\Hitesh\Project\SSGithub\dotnet\SaralStockManagement\SaralStock\obj\x86\Debug\BillingSystem.frmSaralPurchase.resources
+E:\Hitesh\Project\SSGithub\dotnet\SaralStockManagement\SaralStock\obj\x86\Debug\BillingSystem.ProductEntryForm.resources
+E:\Hitesh\Project\SSGithub\dotnet\SaralStockManagement\SaralStock\obj\x86\Debug\BillingSystem.Setting.resources
+E:\Hitesh\Project\SSGithub\dotnet\SaralStockManagement\SaralStock\obj\x86\Debug\BillingSystem.BillGeneration.resources
+E:\Hitesh\Project\SSGithub\dotnet\SaralStockManagement\SaralStock\obj\x86\Debug\BillingSystem.PurchaseEntryForm.resources
 E:\Hitesh\Project\SSGithub\dotnet\SaralStockManagement\SaralStock\obj\x86\Debug\BillingSystem.frmView.resources
 E:\Hitesh\Project\SSGithub\dotnet\SaralStockManagement\SaralStock\obj\x86\Debug\BillingSystem.Properties.Resources.resources
 E:\Hitesh\Project\SSGithub\dotnet\SaralStockManagement\SaralStock\obj\x86\Debug\ClientApplication.GenerateKey.resources

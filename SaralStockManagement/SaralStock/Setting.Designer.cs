@@ -1,6 +1,6 @@
 ﻿namespace BillingSystem
 {
-    partial class frmGBSSetting
+    partial class Setting
     {
         /// <summary>
         /// Required designer variable.

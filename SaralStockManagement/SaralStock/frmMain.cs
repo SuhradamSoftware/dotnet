@@ -42,10 +42,10 @@ namespace BillingSystem
 
         private void linkProductMenu_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            if (!Application.OpenForms.OfType<frmGBSProduct>().Any())
+            if (!Application.OpenForms.OfType<ProductEntryForm>().Any())
             {
                 CloseOpenForm.HideAllForms();
-                frmGBSProduct formGBSProduct = new frmGBSProduct();
+                ProductEntryForm formGBSProduct = new ProductEntryForm();
                 formGBSProduct.MdiParent = this;
                 formGBSProduct.Show();
             }
@@ -53,10 +53,10 @@ namespace BillingSystem
 
         private void linkBillMenu_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            if (!Application.OpenForms.OfType<frmGBSInvoice>().Any())
+            if (!Application.OpenForms.OfType<BillGeneration>().Any())
             {
                 CloseOpenForm.HideAllForms();
-                frmGBSInvoice formGBSInvoice = new frmGBSInvoice();
+                BillGeneration formGBSInvoice = new BillGeneration();
                 formGBSInvoice.MdiParent = this;
                 formGBSInvoice.Show();
             }
@@ -64,21 +64,27 @@ namespace BillingSystem
 
         private void linkCustomerMenu_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            if (!Application.OpenForms.OfType<frmGBSCustomer>().Any())
+            try
             {
-                CloseOpenForm.HideAllForms();
-                frmSaralPurchase purchasePage = new frmSaralPurchase();
-                purchasePage.MdiParent = this;
-                purchasePage.Show();
+                if (!Application.OpenForms.OfType<PurchaseEntryForm>().Any())
+                {
+                    CloseOpenForm.HideAllForms();
+                    PurchaseEntryForm purchasePage = new PurchaseEntryForm();
+                    purchasePage.MdiParent = this;
+                    purchasePage.Show();
+                }
+            }
+            catch (Exception ex)
+            {
             }
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            if (!Application.OpenForms.OfType<frmGBSSetting>().Any())
+            if (!Application.OpenForms.OfType<Setting>().Any())
             {
                 CloseOpenForm.HideAllForms();
-                frmGBSSetting formGBSSetting = new frmGBSSetting();
+                Setting formGBSSetting = new Setting();
                 formGBSSetting.MdiParent = this;
                 formGBSSetting.Show();
             }

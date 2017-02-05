@@ -9,11 +9,11 @@ using System.Windows.Forms;
 
 namespace BillingSystem
 {
-    public partial class frmGBSProduct : Form
+    public partial class ProductEntryForm : Form
     {
         DataLayer _datalayer = new DataLayer();
         private bool deleteDisable = false;
-        public frmGBSProduct()
+        public ProductEntryForm()
         {
             InitializeComponent();
         }

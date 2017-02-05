@@ -80,12 +80,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CloseOpenForm.cs" />
-    <Compile Include="frmGBSCustomer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmGBSCustomer.Designer.cs">
-      <DependentUpon>frmGBSCustomer.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmGBSInvoice.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,24 +92,30 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmGBSProduct.cs">
+    <Compile Include="ProductEntryForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmGBSProduct.Designer.cs">
-      <DependentUpon>frmGBSProduct.cs</DependentUpon>
+    <Compile Include="ProductEntryForm.Designer.cs">
+      <DependentUpon>ProductEntryForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmGBSSetting.cs">
+    <Compile Include="Setting.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmGBSSetting.Designer.cs">
-      <DependentUpon>frmGBSSetting.cs</DependentUpon>
+    <Compile Include="Setting.Designer.cs">
+      <DependentUpon>Setting.cs</DependentUpon>
     </Compile>
     <Compile Include="DataAccess.cs" />
-    <Compile Include="frmSaralPurchase.cs">
+    <Compile Include="BillGeneration.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmSaralPurchase.designer.cs">
-      <DependentUpon>frmSaralPurchase.cs</DependentUpon>
+    <Compile Include="BillGeneration.designer.cs">
+      <DependentUpon>BillGeneration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseEntryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseEntryForm.designer.cs">
+      <DependentUpon>PurchaseEntryForm.cs</DependentUpon>
     </Compile>
     <Compile Include="frmView.cs">
       <SubType>Form</SubType>
@@ -145,24 +145,23 @@
     <Compile Include="RegisterProduct.designer.cs">
       <DependentUpon>RegisterProduct.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Copy of Report1.rdlc" />
-    <EmbeddedResource Include="frmGBSCustomer.resx">
-      <DependentUpon>frmGBSCustomer.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmGBSInvoice.resx">
       <DependentUpon>frmGBSInvoice.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmGBSProduct.resx">
-      <DependentUpon>frmGBSProduct.cs</DependentUpon>
+    <EmbeddedResource Include="ProductEntryForm.resx">
+      <DependentUpon>ProductEntryForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmGBSSetting.resx">
-      <DependentUpon>frmGBSSetting.cs</DependentUpon>
+    <EmbeddedResource Include="Setting.resx">
+      <DependentUpon>Setting.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmSaralPurchase.resx">
-      <DependentUpon>frmSaralPurchase.cs</DependentUpon>
+    <EmbeddedResource Include="BillGeneration.resx">
+      <DependentUpon>BillGeneration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseEntryForm.resx">
+      <DependentUpon>PurchaseEntryForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmView.resx">
       <DependentUpon>frmView.cs</DependentUpon>

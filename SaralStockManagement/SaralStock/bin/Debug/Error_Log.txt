@@ -566,3 +566,311 @@ Reson : Bind data set
 Error Message : The specified table does not exist. [ SSNameValues ]
 Date Time : 04-02-2017 09:43:07
 ----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ Party ]
+Date Time : 05-02-2017 10:15:12
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ ProductCompany ]
+Date Time : 05-02-2017 10:15:12
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The column name is not valid. [ Node name (if any) = ,Column name = ProductCode ]
+Date Time : 05-02-2017 10:15:12
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ Category ]
+Date Time : 05-02-2017 10:15:12
+----------------------------------------------------------------
+Reson : Bind data set
+Error Message : The specified table does not exist. [ Purchase ]
+Date Time : 05-02-2017 10:15:12
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ Category ]
+Date Time : 05-02-2017 10:15:16
+----------------------------------------------------------------
+Reson : Bind data set
+Error Message : The specified table does not exist. [ Category ]
+Date Time : 05-02-2017 10:15:16
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ Party ]
+Date Time : 05-02-2017 10:15:17
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ ProductCompany ]
+Date Time : 05-02-2017 10:15:17
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The column name is not valid. [ Node name (if any) = ,Column name = ProductCode ]
+Date Time : 05-02-2017 10:15:17
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ Category ]
+Date Time : 05-02-2017 10:15:17
+----------------------------------------------------------------
+Reson : Bind data set
+Error Message : The specified table does not exist. [ Purchase ]
+Date Time : 05-02-2017 10:15:17
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ Party ]
+Date Time : 05-02-2017 10:16:51
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ ProductCompany ]
+Date Time : 05-02-2017 10:16:51
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The column name is not valid. [ Node name (if any) = ,Column name = ProductCode ]
+Date Time : 05-02-2017 10:16:51
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ Category ]
+Date Time : 05-02-2017 10:16:52
+----------------------------------------------------------------
+Reson : Bind data set
+Error Message : The specified table does not exist. [ Purchase ]
+Date Time : 05-02-2017 10:16:52
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ Party ]
+Date Time : 05-02-2017 10:18:38
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ ProductCompany ]
+Date Time : 05-02-2017 10:18:38
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The column name is not valid. [ Node name (if any) = ,Column name = ProductCode ]
+Date Time : 05-02-2017 10:18:38
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ Category ]
+Date Time : 05-02-2017 10:18:38
+----------------------------------------------------------------
+Reson : Bind data set
+Error Message : The specified table does not exist. [ Purchase ]
+Date Time : 05-02-2017 10:18:39
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ Category ]
+Date Time : 05-02-2017 10:21:44
+----------------------------------------------------------------
+Reson : Bind data set
+Error Message : The specified table does not exist. [ Category ]
+Date Time : 05-02-2017 10:21:45
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ Party ]
+Date Time : 05-02-2017 10:21:50
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ ProductCompany ]
+Date Time : 05-02-2017 10:21:50
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The column name is not valid. [ Node name (if any) = ,Column name = ProductCode ]
+Date Time : 05-02-2017 10:21:51
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ Category ]
+Date Time : 05-02-2017 10:21:51
+----------------------------------------------------------------
+Reson : Bind data set
+Error Message : The specified table does not exist. [ Purchase ]
+Date Time : 05-02-2017 10:21:51
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ Party ]
+Date Time : 05-02-2017 10:23:36
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ ProductCompany ]
+Date Time : 05-02-2017 10:23:36
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The column name is not valid. [ Node name (if any) = ,Column name = ProductCode ]
+Date Time : 05-02-2017 10:23:36
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ Category ]
+Date Time : 05-02-2017 10:23:36
+----------------------------------------------------------------
+Reson : Bind data set
+Error Message : The specified table does not exist. [ Purchase ]
+Date Time : 05-02-2017 10:23:36
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ Category ]
+Date Time : 05-02-2017 10:23:40
+----------------------------------------------------------------
+Reson : Bind data set
+Error Message : The specified table does not exist. [ Category ]
+Date Time : 05-02-2017 10:23:40
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ Party ]
+Date Time : 05-02-2017 10:23:45
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ ProductCompany ]
+Date Time : 05-02-2017 10:23:45
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The column name is not valid. [ Node name (if any) = ,Column name = ProductCode ]
+Date Time : 05-02-2017 10:23:45
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ Category ]
+Date Time : 05-02-2017 10:23:45
+----------------------------------------------------------------
+Reson : Bind data set
+Error Message : The specified table does not exist. [ Purchase ]
+Date Time : 05-02-2017 10:23:45
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ Party ]
+Date Time : 05-02-2017 10:24:14
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ ProductCompany ]
+Date Time : 05-02-2017 10:24:14
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The column name is not valid. [ Node name (if any) = ,Column name = ProductCode ]
+Date Time : 05-02-2017 10:24:14
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ Category ]
+Date Time : 05-02-2017 10:24:15
+----------------------------------------------------------------
+Reson : Bind data set
+Error Message : The specified table does not exist. [ Purchase ]
+Date Time : 05-02-2017 10:24:15
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ Category ]
+Date Time : 05-02-2017 10:24:39
+----------------------------------------------------------------
+Reson : Bind data set
+Error Message : The specified table does not exist. [ Category ]
+Date Time : 05-02-2017 10:24:39
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ Party ]
+Date Time : 05-02-2017 10:24:47
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ ProductCompany ]
+Date Time : 05-02-2017 10:24:50
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The column name is not valid. [ Node name (if any) = ,Column name = ProductCode ]
+Date Time : 05-02-2017 10:24:54
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ Category ]
+Date Time : 05-02-2017 10:24:57
+----------------------------------------------------------------
+Reson : Bind data set
+Error Message : The specified table does not exist. [ Purchase ]
+Date Time : 05-02-2017 10:25:04
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ Category ]
+Date Time : 05-02-2017 10:25:25
+----------------------------------------------------------------
+Reson : Bind data set
+Error Message : The specified table does not exist. [ Category ]
+Date Time : 05-02-2017 10:25:25
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ Party ]
+Date Time : 05-02-2017 10:25:29
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ ProductCompany ]
+Date Time : 05-02-2017 10:25:29
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The column name is not valid. [ Node name (if any) = ,Column name = ProductCode ]
+Date Time : 05-02-2017 10:25:29
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ Category ]
+Date Time : 05-02-2017 10:25:29
+----------------------------------------------------------------
+Reson : Bind data set
+Error Message : The specified table does not exist. [ Purchase ]
+Date Time : 05-02-2017 10:25:35
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ Party ]
+Date Time : 05-02-2017 10:26:18
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ ProductCompany ]
+Date Time : 05-02-2017 10:26:18
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The column name is not valid. [ Node name (if any) = ,Column name = ProductCode ]
+Date Time : 05-02-2017 10:26:18
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ Category ]
+Date Time : 05-02-2017 10:26:19
+----------------------------------------------------------------
+Reson : Bind data set
+Error Message : The specified table does not exist. [ Purchase ]
+Date Time : 05-02-2017 10:26:23
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ Party ]
+Date Time : 05-02-2017 10:27:19
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ ProductCompany ]
+Date Time : 05-02-2017 10:27:19
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The column name is not valid. [ Node name (if any) = ,Column name = ProductCode ]
+Date Time : 05-02-2017 10:27:19
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ Category ]
+Date Time : 05-02-2017 10:27:19
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ Party ]
+Date Time : 05-02-2017 10:28:48
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ ProductCompany ]
+Date Time : 05-02-2017 10:28:48
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The column name is not valid. [ Node name (if any) = ,Column name = ProductCode ]
+Date Time : 05-02-2017 10:28:48
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ Category ]
+Date Time : 05-02-2017 10:28:48
+----------------------------------------------------------------
+Reson : Bind data set
+Error Message : The specified table does not exist. [ Purchase ]
+Date Time : 05-02-2017 10:28:48
+----------------------------------------------------------------
+Reson : Bind data set
+Error Message : The specified table does not exist. [ Purchase ]
+Date Time : 05-02-2017 10:28:51
+----------------------------------------------------------------
+Reson : Bind data table
+Error Message : The specified table does not exist. [ Category ]
+Date Time : 05-02-2017 10:29:15
+----------------------------------------------------------------
+Reson : Bind data set
+Error Message : The specified table does not exist. [ Category ]
+Date Time : 05-02-2017 10:29:15
+----------------------------------------------------------------
